@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Press Start 2P', cursive;
+
+}
+.container {
+    width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 90px 0;
+    padding-top: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.add-note {
+    width: 100%;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #bcb8b1;
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+form * {
+    font-family: inherit;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 2px 2px 0 #463f3a;
+    outline: none;
+    font-size: 20px;
+    color: #463f3a;
+    
+}
+form input::placeholder{
+    color: #463f3a;
+    opacity: .5;
+}
+form button:active {
+    box-shadow: inset 2px 2px 0 #463f3a;
+}
+
+form input:focus{
+    box-shadow: inset 2px 2px 0 #463f3a;
+}
+form:last-child{
+    margin-bottom: 10px;
+}
+
+.note-holder{
+    background-color: #f4f3ee;
+    padding: 10px 15px;
+}
+.note-holder .empty {
+    text-align: center;
+}
+
+.note {
+    background-color: #463f3a;
+    position: relative;
+    padding: 20px 40px;
+    margin-bottom: 6px;
+    border: 3px dashed #463f3a;
+    box-shadow: 2px 2px 0 #e0afa0;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.note .checked {
+    text-decoration: line-through;
+}
+.note:hover {
+    border-color: #f4f3ee;
+    box-shadow: none;
+}
+.note input {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    transform: scale(1.5);
+}
+.note small{
+    color: #e0afa0;
+    opacity: .6;
+}
+
+.note .close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    top: 5px;
+}
+
+.note .close:hover{
+    color: #f00;
+}
+
+footer{
+    background-color: #bcb8b1;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.7;
+    color: #463f3a;
+}
